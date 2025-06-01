@@ -4,8 +4,8 @@ const BgColorContext = createContext()
 
 export const useBgContext = () => useContext(BgColorContext);
 export const BackgroundProvider=({ children }) => {
-    const [bgColor, setBgColor] = useState('white');
-    const [text, setText] = useState('black');
+    const [bgColor, setBgColor] = useState('red');
+    const [text, setText] = useState('white');
 
   return (
     <BgColorContext.Provider value={{ bgColor, setBgColor ,text, setText }}>
